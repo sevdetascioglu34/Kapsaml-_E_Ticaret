@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+/*! base css start*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Jost', sans-serif;
+}
+ul,ol{ 
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+a{ 
+    text-decoration:none;
+    color:#000; 
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    max-width:1200px;
+    width:100%;
+    margin:auto; 
+}
+button{
+    margin-top:20px; 
+    line-height:40px;
+    cursor:pointer;
+    border:none;
+}
+button:disabled{
+    opacity:0.4 !important;
+    cursor:no-drop;
+}
+button:disabled{
+    
+}
+.btn{
+    display:inline-block;
+    line-height:40px;
+    font-weight:500;
+    transition:0.2s ease;
+    padding:0 25px;
+    border:1px solid black;
+    font-weight:500;
+}
+.btn-sm{
+    line-height:33px;
+}
+.btn-lg{
+    line-height:45px;
+    background-color: #fff;
+}
+.btn-primary{ 
+    background-color: #1367ef;
+    color:#fff;
+    border-color:#1367ef; 
+}
+.btn-primary:hover{
+    background-color: #fff;
+    color:#1367ef;
+}
+textarea{
+    overflow:auto;
+}
+input[type="text"],input[type="email"],input[type="number"],input[type="password"],textarea{
+    outline:none; 
+    border:1px solid #dee0ea;
+    padding:8px 8px 8px 15px;
+}
+input[type="text"]:focus,input[type="email"]:focus,input[type="number"]:focus,input[type="password"]:focus,textarea:focus{
+    border-color:gray;
+}
+.img-fluid{
+    width:100%;
+}
+/*! base css end*/
+
+/*!header-center responsive*/
+@media (max-width:1200px){
+    .container{
+        max-width:992px;
+    }
+}
+@media (max-width:992px){
+    .container{
+        max-width:768px;
+    }
+}
+@media (max-width:768px){
+    .container{
+        max-width:576px;
+    }
+}
+@media (max-width:576px){
+    .container{
+        max-width:400px;
+    }
+}
+@media (max-width:400px){
+    .container{
+        max-width:350px;
+    }
+}
